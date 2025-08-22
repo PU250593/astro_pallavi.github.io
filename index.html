@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Astro Pallavi</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url("bg.jpg.webp") no-repeat center center fixed;
+      background-size: cover;
+      color: #ffd700;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 🔹 Navigation Bar */
+    nav {
+      background: #4d0000;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      box-shadow: 0 4px 12px rgba(255,215,0,0.3);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 18px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: #ffd700;
+      color: #4d0000;
+      box-shadow: 0 0 12px #ffd700, 0 0 25px #ffcc00;
+    }
+
+    header {
+      background: linear-gradient(to right, #660000, #990000);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(255,215,0,0.4);
+    }
+
+    header h1 {
+      margin: 0;
+      color: #fff8dc;
+      font-size: 2.5em;
+      text-shadow: 1px 1px 6px #000;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 5px;
+      color: #ffd700;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #ffdb4d;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    /* 🔹 Buttons */
+    .button {
+      background-color: #ffd700;
+      color: #4d0000;
+      padding: 12px 28px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 20px;
+      box-shadow: 0 4px 12px rgba(255,215,0,0.4);
+      transition: 0.3s ease;
+    }
+
+    .button:hover {
+      background: #ffcc00;
+      box-shadow: 0 0 15px #ffd700, 0 0 30px #ffcc00;
+    }
+
+    /* 🔹 Services Grid */
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 50px;
+    }
+
+    .item {
+      width: 300px;
+      text-align: center;
+    }
+
+    .item img {
+      width: 120%;
+      object-fit: cover;
+      border: 3px solid #ffd700;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .item img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ffd700;
+    }
+
+    .title {
+      margin-top: 10px;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+
+    .qr-code img {
+      width: 280px;
+      height: 280px;
+      border: 4px solid #ffd700;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #660000;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.95em;
+    }
+
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Astro_Pallavi9999</h1>
+  <p>Trusted Astrologer for Powerful Guidance & Result-Oriented Remedies</p>
+</header>
+
+<!-- 🔹 Navigation Bar -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#courses">Courses</a>
+  <a href="#booking">Booking & Payment</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- 🔹 About -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    ✨ I am Astro Pallavi, a passionate and dedicated astrologer with over 15 years of expertise in Lal Kitab Astrology, Tarot Reading, and Personalized Remedies. Over the years, I have guided countless individuals toward clarity, peace, and success through my intuitive insights and time-tested spiritual practices.<br>
+🌟 My clients often share that my predictions hold more than 90% accuracy, and I am deeply humbled to consistently receive positive reviews for my work. I specialize not only in detailed Kundali readings but also in helping those who do not even know their exact date or time of birth by preparing accurate life charts and offering practical remedies.<br>
+💫 My approach is holistic—I believe that astrology is not just about predicting the future, but about empowering individuals to make the right choices, remove obstacles, and live a more fulfilling life. Through personalized remedies, Lal Kitab upaay, and tarot insights, I strive to bring balance, prosperity, and happiness into the lives of my clients.<br>
+🌺 With every consultation, my mission is to bring hope, direction, and positive transformation, so that people can walk their life path with confidence and peace of mind.
+  </p>
+  <img src="about.jpg" alt="Astrologer About" style="width:300px; border:3px solid #ffd700; border-radius:12px; margin-top:20px;">
+</section>
+
+<!-- 🔹 Services -->
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="item">
+      <img src="kundalibooking.jpg" alt="Kundali Reading">
+      <div class="title">Kundali Reading</div>
+    </div><br>
+    <div class="item">
+      <img src="tarotbooking.jpg" alt="Tarot Reading">
+      <div class="title">Tarot Reading</div>
+    </div><br>
+    <div class="item">
+      <img src="Maa Baglamukhi.jpg" alt="Maa Baglamukhi Puja ">
+      <div class="title">Maa Baglamukhi Puja</div>
+    </div>
+  </div>
+</section>
+
+<!-- 🔹 Courses -->
+<section id="courses">
+  <h2>Our Courses</h2>
+  <div class="grid">
+    <div class="item">
+      <img src="lalkitab.png.jpg" alt="Lal Kitab Course">
+      <div class="title">Lal Kitab Course</div>
+    </div><br>
+    <div class="item">
+      <img src="tarotco.jpg" alt="Tarot Course">
+      <div class="title">Tarot Course</div>
+    </div>
+  </div>
+</section>
+
+<!-- 🔹 Booking & Payment -->
+<section id="booking" class="qr-code">
+  <h2>Book & Pay</h2>
+  <p>Scan the QR to confirm your booking and send screenshot on Instagram.</p>
+  <img src="QR.jpg" alt="QR Code">
+</section>
+
+<!-- 🔹 Contact -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>📷 Instagram: <a href="https://www.instagram.com/astro_pallavi9999/" target="_blank">@astro_pallavi9999</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Astro Pallavi | Designed by Pallawi Upadhyay ✨</p>
+</footer>
+
+</body>
+</html>
